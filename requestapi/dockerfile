@@ -10,5 +10,5 @@ RUN pip install pytest-html
 RUN pip install pytest pytest-html
 
 COPY . .
-
+RUN pip install -r requirement.txt
 CMD ["pytest" ,"test_api.py","--html=report.html"]
